@@ -5,3 +5,4 @@ node_modules/
 *.old
 Claude outputs/
 bun.lock
+specs/practical-tla/_book/

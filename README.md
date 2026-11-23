@@ -82,6 +82,12 @@ spec は `spec`(lab 内のパス)か `module` + `source`(+ `cfg`)のインライ
   workers が複数だと最短とは限らない(`--workers 1` で最短)
 - `examples/RaceCounter.tla` — PlusCal。非アトミックな加算で lost update が起きる
 
+## 置き場所
+
+- `examples/` — 配布用のサンプル(DieHard、RaceCounter)。手を入れない
+- `specs/` — 自分の実験。1 トピック 1 フォルダ(詳しくは [`specs/README.md`](specs/README.md))
+- `work/` — `tlc` ツールにインラインで渡した spec の一時置き場(`.gitignore` 済み)
+
 ## 既知の注意
 
 - 取得される TLC は GitHub の最新リリース(2026-11-23 時点で 2.19)。
