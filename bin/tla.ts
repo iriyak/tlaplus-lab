@@ -111,7 +111,7 @@ switch (cmd) {
     break;
   }
   case "help": case "-h": case "--help": {
-    const src = readFileSync(fileURLToPath(import.meta.url), "utf8").split("\n").slice(1, 15);
+    const src = readFileSync(fileURLToPath(import.meta.url), "utf8").split("\n").slice(1, 14);
     console.log(src.map((l) => l.replace(/^\/\/ ?/, "")).join("\n"));
     break;
   }
