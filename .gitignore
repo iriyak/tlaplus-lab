@@ -1,0 +1,7 @@
+lib/
+work/
+states/
+node_modules/
+*.old
+Claude outputs/
+bun.lock

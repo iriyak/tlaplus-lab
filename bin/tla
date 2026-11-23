@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# POSIX shim: the real CLI is bin/tla.ts (needs bun and java). On Windows use bin/tla.cmd.
+exec bun "$(dirname "$(readlink -f "${BASH_SOURCE[0]}")")/tla.ts" "$@"
